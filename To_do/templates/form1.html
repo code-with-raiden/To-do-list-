@@ -1,0 +1,17 @@
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="main">
+  
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">TASK</span>
+        <input type="text" class="form-control" placeholder="add the task your going to do .....!" name="task" required value="{{elist.new_task}}" >
+      </div> 
+      <div class="input-group">
+        <span class="input-group-text">DESCRIPTION</span>
+        <input name="desc" type="text" value = "{{elist.desc}}" class="form-control" ></input>
+
+      </div><br><br>
+      <button type="submit" class="btn btn-outline-info">SUBMIT</button>
+    </div>
+  </form>

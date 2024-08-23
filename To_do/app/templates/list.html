@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{%  block content %}
+
+
+
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{list.new_task}}</h5>
+      <p class="card-text">{{list.desc}}</p>
+      <a href="{% url 'edi' list.id %}" class="btn btn-primary">EDIT</a>
+      <form class="wwwwwwwww" action="" method="POST" >
+        {% csrf_token %}
+        <input type="submit" value="MARK AS COMPLETE" class="btn btn-outline-success" >
+      </form>
+
+    </div>
+  </div>
+{% endblock content %}

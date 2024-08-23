@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="details">
+
+  <div class="form-floating mb-3">
+    <input  class="form-control"  placeholder="LIST " disabled>
+  <label  for="floatingInputDisabled"><pre>       LIST TO DO </pre> </label>
+</div>
+<ol class="list-group list-group-numbered">
+  {% for d in data %}
+<li class="list-group-item"><a href="{% url 'lis' d.id %}">{{d.new_task.upper}}</a></li>
+{% endfor %}
+</ol>
+</div>
+{% endblock content %}

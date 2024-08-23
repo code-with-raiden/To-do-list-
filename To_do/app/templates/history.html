@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<!-- Button trigger modal -->
+<div class="his" >
+    <ul class="list-group" id="list2">
+        <li class="list-group-item"  >HISTORY OF LIST
+           
+        </li>
+        
+        {% for d in data %}
+    
+        <li class="list-group-item list-group-item-secondary" id="list">
+            <p>{{d.new_task}}</p>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <button class="btn" type="submit"><i class="fa fa-trash" ></i></button>
+            </form>
+           
+                                
+        </li>
+     
+    {% endfor %}
+      </ul>
+      
+</div>
+
+
+{% endblock %}
