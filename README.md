@@ -1,3 +1,5 @@
+this is project of  to-do list which user will add the list of works he want to do 
+# UI VIEW
 ![Screenshot 2024-12-17 091244](https://github.com/user-attachments/assets/f1be0d1f-d2f4-4916-88c4-03e39e02f7a8)
 
 ![Screenshot 2024-12-17 091301](https://github.com/user-attachments/assets/6f55924b-7744-48bb-94be-4aa2383ba6cd)
